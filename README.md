@@ -4,7 +4,7 @@ A Flutter plugin for watching smart cards insertion and removal.
 
 | Android | iOS | MacOS | Web | Linux | Windows |
 | :-----: | :-: | :---: | :-: | :---: | :-----: |
-|    X    |  X  |   V   |  X  |   X   |    X    |
+|    X    |  X  |   V   |  X  |   X   |    V    |
 
 ## Usage
 

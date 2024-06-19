@@ -50,6 +50,7 @@ base class ScardInfo {
           driverName: e['driverName'],
         ),
     ).toList()),
+    TargetPlatform.windows => ScardInfoWindows(readerName: source.key),
     _ => throw UnsupportedError('Platform ${defaultTargetPlatform.name} is not supported.'),
   };
 
@@ -83,4 +84,13 @@ final class ScardTokenInfo {
   String? slotName;
   String? driverName;
   ScardTokenInfo({required this.tokenId, this.slotName, this.driverName});
+}
+
+final class ScardInfoWindows extends ScardInfo {
+  ScardInfoWindows({required super.readerName});
+
+  @override
+  String toString() {
+    return '{readerName: $readerName}';
+  }
 }

@@ -1,6 +1,6 @@
 name: scard_watcher
 description: "A Flutter plugin for watching smart cards insertion and removal."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/AuthenTrend/scard_watcher
 
 environment:
@@ -36,6 +36,8 @@ flutter:
     platforms:
       macos:
         pluginClass: ScardWatcherPlugin
+      windows:
+        pluginClass: ScardWatcherPluginCApi
 
   # To add assets to your plugin package, add an assets section, like this:
   # assets:
